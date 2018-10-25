@@ -92,10 +92,7 @@ button{
   @extend %center-element;
   color: $colorWhite;
   cursor: pointer;
-  left: 0;
   padding: 10px 0;
-  position: absolute;
-  right: 0;
   width: 90%;
 }
 
@@ -698,6 +695,10 @@ section:nth-child(5){
   }
 
   form{
+    input:focus{
+      border: 2px solid $colorOrange;
+    }
+
     @include mq(medium){
       padding-left: 10px;
       padding-right: 10px;
@@ -709,12 +710,12 @@ section:nth-child(5){
 
 #signup{
   form{
-    input:nth-child(6){
-      margin-bottom: 110px;
+    .password{
+      margin-bottom: 40px;
     }
 
     button{
-      bottom: 150px;
+      margin-bottom: 20px;
     }
 
     p:nth-child(8), :last-child{
@@ -751,12 +752,12 @@ section:nth-child(5){
   form{
     height: 450px;
 
-    input:nth-child(4){
-      margin-bottom: 110px;
+    .password{
+      margin-bottom: 40px;
     }
 
     button{
-      bottom: 200px;
+      margin-bottom: 20px;
     }
 
     p:nth-child(6), :last-child{

@@ -75,10 +75,7 @@ button {
   bottom: 30px;
   color: #FFF;
   cursor: pointer;
-  left: 0;
   padding: 10px 0;
-  position: absolute;
-  right: 0;
   width: 90%; }
 
 form {
@@ -459,16 +456,18 @@ section:nth-child(5) {
   #signup .graphic, #signin .graphic {
     position: relative;
     top: 165px; }
+  #signup form input:focus, #signin form input:focus {
+    border: 2px solid #FF7F50; }
   @media (max-width: 800px) {
     #signup form, #signin form {
       padding-left: 10px;
       padding-right: 10px; } }
 
-#signup form input:nth-child(6) {
-  margin-bottom: 110px; }
+#signup form .password {
+  margin-bottom: 40px; }
 
 #signup form button {
-  bottom: 150px; }
+  margin-bottom: 20px; }
 
 #signup form p:nth-child(8), #signup form :last-child {
   line-height: 20px;
@@ -489,10 +488,10 @@ section:nth-child(5) {
 
 #signin form {
   height: 450px; }
-  #signin form input:nth-child(4) {
-    margin-bottom: 110px; }
+  #signin form .password {
+    margin-bottom: 40px; }
   #signin form button {
-    bottom: 200px; }
+    margin-bottom: 20px; }
   #signin form p:nth-child(6), #signin form :last-child {
     line-height: 20px;
     text-align: center; }
